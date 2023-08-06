@@ -241,7 +241,11 @@
     }
 }
 
-
+@media(max-width:390px){
+    .progress_bar{
+        width: 310px;
+    }
+}
 
 @media ( max-width:320px){
     .header-wapper{
