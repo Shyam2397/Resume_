@@ -1,0 +1,315 @@
+.header-wapper{
+    background-color:#565656;
+    height: 380px;
+    width: 100%;
+}
+.white-band{
+    position: absolute;
+    width: 100%;
+    background-color: #eeeeee;
+    height: 30px;
+    margin-top: 270px;
+}
+.profile-wapper{
+    position: absolute;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+}
+.profile{
+    
+    width: 220px;
+    height: 220px;
+    border: 8px dotted #f8be29;
+    border-radius: 50%;
+}
+
+.name-wapper{
+    position: absolute;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 250px;
+}
+.name{
+    font-size: 50px;
+    background-color: #f8be29;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.contact-wapper{
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #565656;
+}
+.body-wapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+.body-left,.body-right{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.body-left + .body-right{
+    border-left: 1px solid black;
+}
+.section-wapper{
+    margin-top: 30px;
+    display: flex;
+}
+.icon{
+    font-size: 28px;
+    color: #f8be29;
+    background-color: #565656;
+    padding: 10px;
+    border-radius: 50%;
+    outline: 5px dotted #f8be29 ;
+}
+.title{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 30px;
+    justify-content: flex-start;
+}
+.data{
+    text-indent: 80px;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: large;
+}
+.data-1{
+    padding-top: 20px;
+}
+.data-1-t{
+    font-size: large;
+}
+.sidet{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+}
+.data1{
+    padding-top: 30px;
+    font-size: large;
+}
+.progress_container h6{
+    margin: 10px 0 10px 10px;
+    letter-spacing: .5px;
+}
+.progress_bar{
+    position: relative;
+    width: 500px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 3px 4px 5px 0px rgba(204 185 185 /.75);
+}
+.progress_bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg,rgba(76,175,80,1)50%,rgba(50,222,132,1)100%);
+    transition: width .5s linear;
+}
+
+/* MEDIA CONTROLL */
+@media(max-width:1024px){
+    .progress_bar{
+        width: 340px;
+    }
+}
+
+@media(max-width:768px){
+    .header-wapper{
+        height: 290px;
+    }
+    .white-band{
+        margin-top: 220px;
+    }
+    .profile{
+    
+        width: 165px;
+        height: 165px;
+        border: 7px dotted #f8be29;
+    }
+    .name-wapper{
+        margin-top: 208px;
+    }
+    .name{
+        font-size: 35px;
+        padding: 12px;
+    }
+    .contact-wapper{
+       font-size: medium;
+    }
+    .body-wapper{
+        margin: 10px;
+    }
+
+    .body-left,.body-right{
+        padding: 15px;
+    }
+    .section-wapper{
+        margin-top: 20px;
+    }
+    .icon{
+        font-size: 24px;
+        outline: 5px dotted #f8be29 ;
+    }
+    .title{
+        font-size: 28px;
+        margin-left: 25px;
+        justify-content: flex-start;
+    }
+    .data{
+        margin-top: 20px;
+        text-indent: 70px;
+        text-align: justify;
+    }
+    .progress_bar{
+        width: 330px;
+    }
+}
+
+
+@media(max-width:500px){
+    .header-wapper{
+        height: 260px;
+    }
+    .white-band{
+        margin-top: 205px;
+    }
+    .profile{
+        width: 150px;
+        height: 150px;
+        border: 6px dotted #f8be29;
+    }
+    .name-wapper{
+        margin-top: 200px;
+    }
+    .name{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .contact-wapper{
+        font-size: 15px;
+    }
+    .body-wapper{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .body-left,.body-right{
+        padding: 10px;
+    }
+    .body-left + .body-right{
+        border-left: none;
+    }
+    .section-wapper{
+        margin-top: 20px;
+    }
+    .icon{
+        font-size: 20px;
+        outline: 4px dotted #f8be29 ;
+    }
+    .title{
+        font-size: 25px;
+        margin-left: 17px;
+        justify-content: flex-start;
+    }
+    .data{
+        margin-top: 15px;
+        text-indent: 60px;
+        text-align: justify;
+    }
+    .progress_bar{
+        width: 340px;
+    }
+}
+
+
+
+@media ( max-width:320px){
+    .header-wapper{
+        height: 225px;
+    }
+    .white-band{
+        margin-top: 170px;
+    }
+    .profile{
+    
+        width: 120px;
+        height: 120px;
+        border: 4px dotted #f8be29;
+    }
+    .name-wapper{
+        margin-top: 170px;
+    }
+    .name{
+        font-size: 15px;
+        padding: 12px;
+    }
+    .contact-wapper{
+        font-size: 14px;
+    }
+    .body-wapper{
+        margin: 4px;
+    }
+    .body-left,.body-right{
+        padding: 5px;
+    }
+    .body-left + .body-right{
+        border-left: none;
+    }
+    .section-wapper{
+        margin-top: 10px;
+        display: flex;
+    }
+    .icon{
+        font-size: 13px;
+        outline: 4px dotted #f8be29 ;
+    }
+    .title{
+        font-size: 15px;
+        margin-left: 12px;
+        justify-content: flex-start;
+    }
+    .data{
+        font-size: 14px;
+        text-indent: 48px;
+        margin-top: 12px;
+        text-align: justify;
+    }
+    .data-1-t{
+        font-size: 14px;
+    }
+    .data-1-d{
+        font-size: 14px;
+    }
+    .sidet{
+        font-size: 15px;
+    }
+    .data1{
+        font-size: 14px;
+    }
+    .progress_container h6{
+        font-size: 14px;
+    }
+    .progress_bar{
+        width: 280px;
+    }
+}
